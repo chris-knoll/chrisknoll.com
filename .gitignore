@@ -4,3 +4,6 @@ env
 *.pyc
 __pycache__
 /chrisknoll/settings.py
+
+*.bak
+*.sqlite3
