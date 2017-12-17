@@ -3,6 +3,31 @@
 {% block title %}Chris Knoll{% endblock %}
 
 {% block body %}
-	<h1>Welcome to my site</h1>
-	<p>This is the best site around</p>
+<div id="main-intro">
+	<h1 class="cursive">Chris Knoll</h1>
+	{% load static %}
+	<img id="chris-pic" src="{% static "main/me.png" %}" alt="Me!"/>
+	<h3 class="cursive">Software Engineer</h3>
+</div>
+
+<p>I’ve always been fascinated with computers. But it wasn’t until my mother started calling me every other day for help with her computer that I decided to steer away from a hardware and help-desk route to become a software developer.</p>
+
+<p>I was also frustrated that I couldn’t make software solve the problems that needed to be solved in my previous jobs. I knew that I could create something better - so I started learning to write software instead of merely using it. And yes, I still help fix my mom’s computer when she calls (I’m not a horrible person).</p>
+
+<h2>Education</h2>
+<p>I earned my BASc in Software Development from Green River, graduating Summa Cum Laude with a 4.0 GPA. I was nominated for the President’s Award and won the Technology Award, an award given to the top student across eight different departments. The strengths that made me successful as a student also make me a great software engineer: strong logic and math, a knack for debugging, being extremely detail-oriented, following specifications before going above and beyond, and the ability to adapt and be agile.</p>
+
+<h2>Skills / Interests</h2>
+<p>I would consider myself a versatile full-stack developer with a passion for back-end development. My strongest languages are <strong>Java</strong> and <strong>PHP</strong>, but I am focusing my energy on becoming an expert <strong>Python</strong> developer. I love the versatility and simplicity of Python, and it aligns well with my interests in data, back-end development, machine learning, and AI.</p>
+
+<p>I’m passionate about improving the efficiency of my clients and delivering a solution that meets _their_ unique set of requirements for a perfect piece of software.</p>
+
+<h2>Project Goals</h2>
+<ul>
+	<li>To have a central location for my projects, notes, and other code-related things</li>
+	<li>To improve my skills with the <strong>Django</strong> framework</li>
+	<li>To practice <strong>Python</strong></li>
+	<li>To improve custom <strong>CSS</strong> skills rather than relying on libraries for styling</li>
+</ul>
+
 {% endblock %}
