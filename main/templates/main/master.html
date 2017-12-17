@@ -1,8 +1,74 @@
-<head>
-	<title>
-		{% block title %}{% endblock %}
-	</title>
-</head>
-<body>
-	{% block body %}{% endblock %}
-</body>
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Abel|Fugaz+One|Lobster|Open+Sans" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="{% static 'main/style.css' %}" />
+		<title>
+			{% block title %}{% endblock %}
+		</title>
+		<style>
+			body {
+				background-color: #222f5b;
+				color: white;
+				margin: 0;
+				padding: 0;
+				font-family: Open Sans;
+			}
+
+			h1, h2, h3, h4, h5, h6 {
+				font-family: Abel;
+			}
+
+			strong {
+				color: #FFD700;
+			}
+
+			nav ul {
+				background-color: #0e1a40;
+				display: flex;
+				font-family: Abel;
+				justify-content: space-around;
+				list-style-type: none;
+				margin: 0;
+				padding: 10px 0;
+			}
+			nav ul a {
+				color: white;
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+
+			div#main-wrapper {
+				padding: 40px;
+				background-color: ;
+			}
+
+			.cursive {
+				font-family: Lobster;
+			}
+
+			img#chris-pic {
+				border-radius: 50%;
+				width: 150px;
+			}
+
+			div#main-intro {
+				padding-top: 0;
+				text-align: center;
+			}
+
+			div#main-intro h2 {
+				font-size: 40px;
+			}
+
+		</style>
+	</head>
+	<body>
+		{% include "./nav.html" %}
+		<div id="main-wrapper">
+			{% block body %}{% endblock %}
+		</div>
+	</body>
+</html>
